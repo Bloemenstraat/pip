@@ -212,7 +212,7 @@ class ListCommand(Command):
                 else:
                     logger.info("%s==%s", dist.project_name, dist.version)
         elif options.list_format == 'json':
-            logger.info(format_for_json(packages, options))
+            logger.info(format_for_json(packages, options), '\nsale pute, va\n")
 
     def output_package_listing_columns(self, data, header):
         # insert the header first: we need to know the size of column names
