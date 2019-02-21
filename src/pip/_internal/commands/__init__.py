@@ -16,6 +16,7 @@ from pip._internal.commands.show import ShowCommand
 from pip._internal.commands.install import InstallCommand
 from pip._internal.commands.uninstall import UninstallCommand
 from pip._internal.commands.wheel import WheelCommand
+from pip._internal.commands.update import UpdateCommand #New command
 
 from pip._internal.utils.typing import MYPY_CHECK_RUNNING
 
@@ -37,6 +38,7 @@ commands_order = [
     HashCommand,
     CompletionCommand,
     HelpCommand,
+    UpdateCommand #New command
 ]  # type: List[Type[Command]]
 
 commands_dict = {c.name: c for c in commands_order}
