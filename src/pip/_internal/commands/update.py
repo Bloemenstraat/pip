@@ -42,18 +42,15 @@ logger = logging.getLogger(__name__)
 
 class UpdateCommand(RequirementCommand):
     """
-    New command added by Bloemenstraat 19.02.2019.
+    New command added by Bloemenstraat 21.02.2019.
 
     Upgrades all packages installed to the newest version.
     """
     name = 'update'
 
     usage = """
-      %prog [options] <requirement specifier> [package-index-options] ...
-      %prog [options] -r <requirements file> [package-index-options] ...
-      %prog [options] [-e] <vcs project url> ...
-      %prog [options] [-e] <local project path> ...
-      %prog [options] <archive url/path> ..."""
+      %prog
+      No options available (or needed)."""
 
     summary = 'Upgrades all packages.'
 
